@@ -1,10 +1,16 @@
+@font-face {
+  font-family: "the_wild_breath_of_zeldaRg";
+  src: url("the_wild_breath_of_zelda.woff2") format("woff2"),
+    url("the_wild_breath_of_zelda.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   background-color: #fccfb6;
+  font-size: 20px;
 }
 
 header {
-  display: flex;
-  justify-content: center;
   background-color: #568233;
   color: #d49f3c;
   height: 100px;
@@ -14,4 +20,24 @@ header {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   text-decoration: underline #613f19;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: "the_wild_breath_of_zeldaRg";
+}
+
+#start-game {
+  text-align: center;
+  border: 5px solid #79777a;
+  max-width: 25%;
+  height: 200px;
+  margin-left: 46%;
+  font-family: "Press Start 2P", cursive;
+  border-radius: 10px;
+  height: 55px;
+  width: 155px;
+  background: #cc9e48;
+  color: #568233;
 }
