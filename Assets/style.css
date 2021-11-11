@@ -1,0 +1,17 @@
+body {
+  background-color: #fccfb6;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #568233;
+  color: #d49f3c;
+  height: 100px;
+  font-size: 50px;
+  width: 100%;
+  border: 1px solid #d49f3c;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-decoration: underline #613f19;
+}
