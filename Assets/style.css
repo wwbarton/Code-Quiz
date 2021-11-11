@@ -28,6 +28,14 @@ h2 {
   font-family: "the_wild_breath_of_zeldaRg";
 }
 
+p {
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  height: 200px;
+  border: 2px solid black;
+  margin: 130px 750px -114px 750px;
+}
+
 #start-game {
   text-align: center;
   border: 5px solid #79777a;
