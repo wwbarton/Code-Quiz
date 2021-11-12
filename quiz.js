@@ -88,12 +88,11 @@ function compare(event) {
 
     if (element.textContent == questions[questionIndex].answer) {
       rupees++;
-      createDiv.textContent =
-        "Correct! The answer is:  " + questions[questionIndex].answer;
+      createDiv.textContent = "TaDAA!!:  " + questions[questionIndex].answer;
     } else {
       secondsLeft = secondsLeft - penalty;
       createDiv.textContent =
-        "Wrong! The correct answer is:  " + questions[questionIndex].answer;
+        "Hey!! Listen!! It's:  " + questions[questionIndex].answer;
     }
   }
 
@@ -108,7 +107,7 @@ function compare(event) {
       rupees +
       "/" +
       questions.length +
-      " Correct!";
+      " Right!";
   } else {
     render(questionIndex);
   }
