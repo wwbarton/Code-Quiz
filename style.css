@@ -29,6 +29,7 @@ h2 {
 }
 
 p {
+  background-color: #613f19;
   font-family: "Press Start 2P", cursive;
   text-align: center;
   height: 200px;
@@ -48,4 +49,9 @@ p {
   width: 155px;
   background: #cc9e48;
   color: #568233;
+  cursor: grab;
+}
+
+#start-game:active {
+  box-shadow: inset -2px -2px 3px #568233;
 }
