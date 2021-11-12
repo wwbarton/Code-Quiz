@@ -11,17 +11,6 @@ body {
   font-size: 20px;
 }
 
-#quiz-box {
-  position: absolute;
-  left: 37%;
-  top: 20%;
-  width: 500px;
-  height: 350px;
-  background-color: #613f19;
-  font-family: "Press Start 2P", cursive;
-  text-align: center;
-  border: 2px solid black;
-}
 header {
   background-color: #568233;
   color: #d49f3c;
@@ -34,28 +23,18 @@ header {
   text-decoration: underline #613f19;
 }
 
-h1,
-h2 {
+#wrapper {
+  position: absolute;
+  left: 37%;
+  top: 20%;
+  width: 500px;
+  height: 350px;
+  background-color: #613f19;
+  font-family: "Press Start 2P", cursive;
   text-align: center;
-  font-family: "the_wild_breath_of_zeldaRg";
+  border: 2px solid black;
 }
-
 #startTime {
-  background-color: purple;
-  margin-left: 33%;
-  padding: 15px 32px;
-  font-size: 20px;
-  color: white;
-}
-#question {
-  margin: 20px;
-}
-
-#currentTime {
-  float: right;
-}
-
-#start-game {
   text-align: center;
   border: 5px solid #79777a;
   max-width: 25%;
@@ -67,11 +46,81 @@ h2 {
   width: 155px;
   background: #cc9e48;
   color: #568233;
-  cursor: grab;
 }
 
-#start-game:active {
-  box-shadow: inset -2px -2px 3px #568233;
+#quiz-box {
+  margin: 20px;
+}
+
+#currentTime {
+  float: right;
+}
+
+#goBack {
+  background-color: #d49f3c;
+  position: relative;
+  padding: 10px;
+  font-size: 20px;
+  color: #568233;
+  top: 30%;
+  left: 55%;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+}
+
+#clear {
+  background-color: #d49f3c;
+  position: relative;
+  padding: 10px;
+  font-size: 20px;
+  color: #568233;
+  top: 30%;
+  right: 5%;
+  text-align: center;
+}
+button {
+  border-radius: 8px;
+}
+
+label {
+  margin-right: 10px;
+}
+input {
+  margin-bottom: 20px;
+  width: 50%;
+  border: 1px solid #d49f3c;
+}
+h1,
+h2 {
+  text-align: center;
+  font-family: "the_wild_breath_of_zeldaRg";
+}
+
+h3 {
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+}
+
+li {
+  background-color: #d49f3c;
+  margin-top: 10px;
+  padding: 5px 15px;
+  width: 80%;
+  font-size: 18px;
+  color: #568233;
+}
+
+#Submit {
+  background-color: #d49f3c;
+  margin-left: 33%;
+  padding: 15px 32px;
+  font-size: 20px;
+  color: #568233;
+}
+
+h4 {
+  text-align: center;
 }
 
 a {
@@ -87,18 +136,31 @@ p {
   margin: 20px;
 }
 
+#createDiv {
+  margin-top: 20px;
+  border-top: 1px solid lightgray;
+}
 @media screen and (max-width: 786px) {
   body {
     max-width: 786px;
   }
 
-  #quiz-box {
+  #wrapper {
     position: absolute;
     left: 20%;
   }
 
   p {
     margin-left: 20%;
+  }
+  #goBack {
+    position: relative;
+    left: 55%;
+  }
+
+  #clear {
+    position: relative;
+    right: 5%;
   }
 }
 
@@ -107,11 +169,15 @@ p {
     min-width: 640px;
   }
 
-  #quiz-box {
+  #wrapper {
     position: absolute;
     left: 10%;
   }
   p {
     margin-left: 10%;
   }
+}
+
+.hide {
+  display: none;
 }
